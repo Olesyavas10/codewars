@@ -45,3 +45,4 @@ function calculator(a, b, sign) {
   }
   return "unknown value";
 }
+console.log(calculator(5, 2, "*")); 
