@@ -12,3 +12,4 @@ If the input string is empty or the removal of the first and last items would ca
     return arr.slice(1,(arr.length-1)).join(" ")
   }
 }
+// return arr.split(",").slice(1,-1).join(" ") || null; короткое решение
