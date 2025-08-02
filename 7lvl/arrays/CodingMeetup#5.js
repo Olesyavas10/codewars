@@ -4,21 +4,11 @@ Your task is to return an object (associative array in PHP, table in COBOL, dict
 
  */
 function countLanguages(list) {
-  let obj={ C: 0, JavaScript: 0, Ruby: 0}
+  let obj={}
   for (let i=0; i<list.length; i++)
     {
-if (list[i].language==="C")
-  {
-    obj.C++
-  }
-else if ((list[i].language==="JavaScript"))
-  {
-    obj.JavaScript++
-  }
-      else if ((list[i].language==="Ruby"))
-  {
-    obj.Ruby++
-  } 
+let lang=list[i].language
+obj[lang] = (obj[lang] || 0) + 1; //смотрим есть ли уже такой язык в объекте, если есть, то увеличиваем счетчик на 1, если нет, то создаем его со значением 1
     }
   return obj
 }
